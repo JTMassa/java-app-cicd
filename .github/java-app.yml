@@ -11,7 +11,7 @@ on:
 permissions:
   id-token: write
   contents: read
-
+  pull-requests: write
 
 env:
   ARTIFACTORY_URL: ${{ secrets.ARTIFACT_URL }}
@@ -23,7 +23,7 @@ env:
   VAULT_TOKEN: ${{secrets.VAULT_TOKEN}}   
   JFROG_REPO_NAME: utc-app 
 
-  jobs:
+jobs:
 
   sonar:
     runs-on: ubuntu-latest
