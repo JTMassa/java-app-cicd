@@ -17,10 +17,10 @@ env:
   ARTIFACTORY_URL: ${{ secrets.ARTIFACT_URL }}
   SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
   SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-  ECR_ROLE: ${{ secrets.ECR_ACCESS_ROLE }}
-  AWS_REGION: ${{ secrets.AWS_REGION }}
-  VAULT_URL: ${{ secrets.VAULT_URL }}  
-  VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}   
+  ECR_ROLE: ${{secrets.ECR_ACCESS_ROLE}}
+  AWS_REGION: ${{secrets.AWS_REGION}}
+  VAULT_URL: ${{secrets.VAULT_URL}}  
+  VAULT_TOKEN: ${{secrets.VAULT_TOKEN}}   
   JFROG_REPO_NAME: utc-app 
 
   jobs:
